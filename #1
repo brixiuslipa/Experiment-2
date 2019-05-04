@@ -1,0 +1,52 @@
+#include <iostream>
+#include <string>
+
+using namespace  std;
+
+int main()
+{
+	int package;
+	float hour, q, w;
+	
+	cout << "Packages:\n\n";
+	
+	
+	cout << "Package A: For P995/mo 10 hrs of access are provided. Additional hours are P20/hr.\n";
+	cout << "Package B: For P1495/mo 20 hrs of access are provided. Additional hours are P10/hr.\n";
+	cout << "Package C: For P1995/mo of unlimited access is provided.\n\n";
+	
+	cout << "Enter '1' for Package A, '2' for Package B, '3' for Package C.\n\n";
+	cout << "Purchased Package: (1 / 2 / 3): " << endl;
+	cin >> package;
+	cout << "Usage in hour/s: " << endl;
+	cin >> hour;
+	
+	q = 995 + ((hour - 10) * 20);
+	w = 1495 + ((hour - 20) * 10);
+	
+	{
+		if (package == 1)
+		{
+			if (hour > 10)
+			cout << "Total price: P" << q << endl;
+			else
+			cout << "Total price: P995" << endl;
+		}
+	
+		else if (package == 2)
+		{
+			if (hour > 20)
+			cout << "Total price: P" << w << endl;
+			else
+			cout << "Total price: P1495" << endl;
+		}	
+		
+		else if (package == 3)
+		
+			cout << "Total price: P1995" << endl;
+			
+		else 
+		cout << "Invalid Input! Please retry and input correctly next time. Thank you.\n";
+	}
+	return 0;
+}
