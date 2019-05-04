@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+
+{	
+	int gallon;
+	float q, w;
+	const float e = 35, r = 1.10; 
+
+	cout << "Past Balance: ";
+	cin >> q; 
+	
+	cout << "Gallon/s Used: ";
+	cin >>	gallon;
+	
+	if (q < 0 || gallon < 0 ) 
+	cout << "Invalid Input. Pleasse try harder." << endl;
+
+	else if (q > 0) 
+		{
+			w = e + (r * gallon) + q + 20;
+			cout << "\nTotal Payment: P" << w << endl;
+		}
+
+	else  
+		{
+			w = e + (r * gallon);
+			cout << "\nTotal Payment: P" << w << endl;
+		}
+
+	return 0;
+}
