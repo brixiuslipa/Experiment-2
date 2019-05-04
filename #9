@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  	int row, col;
+	bool userquit = false;
+  	do
+  	{
+  	 	cout << "How many rows: "; cin >> row;
+  		cout << "Haw many column: "; cin >> col;
+
+  		{
+		 	for ( int y = 0; y < col; y++ )
+		 	{
+		 		cout << "\n*";
+		 	
+			 	for ( int x = 1; x < row; x++ )
+	 			{
+	 				cout << "*";
+				}
+			}
+		}
+		cout << "\n\n";
+		
+	}
+	while (!userquit);
+	return 0; 
+}
