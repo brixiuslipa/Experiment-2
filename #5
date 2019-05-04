@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int counter = 1;
+    
+    cout << "Counting...\n";
+    
+	for (counter = 1; counter <= 10; counter++)
+	{
+    cout << counter << ",";
+	}
+    
+    for (counter = 12; counter <= 30; counter += 2)
+    
+	if (counter == 30)
+
+		cout << "30";
+	
+	else 
+	cout << counter << ",";
+	
+	return 0;
+}
