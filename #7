@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	int q, w;
+	do
+	{
+		cout << "Enter a number: ";
+		cin >> q;
+		
+		w=0;
+
+		for (int ctr = 0; ctr <= q; ctr++)
+		{    
+	    	if (q < 1)
+			{
+				cout << "Thank you!" <<endl;
+				break;
+			} else {
+				w += ctr;
+			}
+	    }
+	    	if (q>0)
+	    	cout << "The sum of all whole numbers from 1 to " << q << " is " << w << "." << endl;
+	}
+	while (q > 0);
+	    
+    return 0;
+}
